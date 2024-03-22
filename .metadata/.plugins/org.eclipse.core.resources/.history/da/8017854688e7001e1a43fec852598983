@@ -1,0 +1,10 @@
+package inputUserTwo;
+
+public class InputUserTwo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

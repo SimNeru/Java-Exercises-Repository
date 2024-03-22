@@ -1,0 +1,103 @@
+package terzo;
+
+public class Terzo {
+
+	public static void main(String[] args) {
+		
+		/* ELENCO TIPI DI DATI:
+		 * boolean: vero, falso (0, 1)
+		 * int: numeri interi
+		 * double: numeri con virgola
+		 * char: un singolo carattere ASCII
+		 * String: array di char ASCII */
+		
+		int age = 18;
+		double height = 1.80;
+		String name = "Simone Nerucci";
+		char sex = 'M';
+		boolean adult = age >= 18 ? true : false;
+		
+		//Stampo "l'anagrafica"
+		System.out.println("Name: " + name);
+		System.out.println("Age: " + age);
+		System.out.println("Height: " + height + "m");
+		System.out.println("Sex: " + sex);
+		System.out.println("Adult: " + adult);
+		
+		Terzo.printMessage();
+		
+		Terzo terzo = new Terzo();
+		terzo.printMessage2();
+		
+		///////////////////////////////////////////////////////////////////////////////
+		
+		//assegno due value interi
+		int primo = 10;
+		int secondo = 5;
+		//assegno a un value la somma di altri due
+		int result = primo + secondo;
+		//Stampo la variabile
+		System.out.println("Somma: " + primo + " + " + secondo + " = " + result);
+		result = primo * secondo;
+		System.out.println("Moltiplicazione: " + primo + " x " + secondo + " = " + result);
+		result = primo / secondo;
+		System.out.println("Divisione: " + primo + " : " + secondo + " = " + result);
+		result = primo - secondo;
+		System.out.println("Sottrazione: " + primo + " - " + secondo + " = " + result);
+		
+		///////////////////////////////////////////////////////////////////////////////
+		
+		//assegnazione valore char
+		char a1 = 'a';
+		char a2 = 'b';
+		char a3 = 'c';
+		//Stampo i char affiancati
+		System.out.println("Char affiancati: " + a1 + "" + a2 + "" + a3);
+		
+		//Assegno variabile char un valore
+		char aMaiuscola = 65;
+		//Stamperà il char assegnato a 65 sulla scala ASCII
+		System.out.println("Valore ASCII 65: "+ aMaiuscola);
+		aMaiuscola++;
+		System.out.println("Valore ASCII 66: "+ aMaiuscola);
+		aMaiuscola--;
+		System.out.println("Valore ASCII 65: "+ aMaiuscola);
+		
+		///////////////////////////////////////////////////////////////////////////////
+		
+		//final è la keyword per indicare un valore costante
+		final double pi = 3.1415;
+		
+		///////////////////////////////////////////////////////////////////////////////
+
+		//tipi dati interi dal più piccolo al più grande
+		byte b; // -128 +127 valori 2^8=256 // il più piccolo valore
+		short s; // -32768 32767 +65000 2^16
+		long l; // tipo dato più grande
+		
+		//CAST IMPLICITO
+		int i = 56;
+		long lunga = i;
+		
+		int a = 10;
+		double dbl = (double) a;
+		float flt = a;
+		System.out.println(flt);
+		
+		//CAST ESPLICITO
+		long l2 = 400000000;
+		int i2 = (int) l2;
+		System.out.println(i2);
+
+	}
+	
+	public static void printMessage() 
+	{
+		System.out.println("Hello There!");
+	}
+	
+	public void printMessage2() 
+	{
+		System.out.println("How's going?");
+	}
+}

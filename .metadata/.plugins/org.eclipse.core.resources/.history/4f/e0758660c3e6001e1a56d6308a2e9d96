@@ -1,0 +1,67 @@
+package terzo;
+
+public class Terzo {
+
+	public static void main(String[] args) {
+		
+		/* ELENCO TIPI DI DATI:
+		 * boolean: vero, falso (0, 1)
+		 * int: numeri interi
+		 * double: numeri con virgola
+		 * char: un singolo carattere ASCII
+		 * String: array di char ASCII */
+		
+		int age = 18;
+		double height = 1.80;
+		String name = "Simone Nerucci";
+		char sex = 'M';
+		boolean adult = age >= 18 ? true : false;
+		
+		//Stampo "l'anagrafica"
+		System.out.println("Name: " + name);
+		System.out.println("Age: " + age);
+		System.out.println("Height: " + height + "m");
+		System.out.println("Sex: " + sex);
+		System.out.println("Adult: " + adult);
+		
+		Terzo.printMessage();
+		
+		Terzo terzo = new Terzo();
+		terzo.printMessage2();
+		
+		//assegno due value interi
+		int primo = 10;
+		int secondo = 5;
+		//assegno a un value la somma di altri due
+		int result = primo + secondo;
+		//Stampo la variabile
+		System.out.println("Somma: " + primo + " + " + secondo + " = " + result);
+		result = primo * secondo;
+		System.out.println("Moltiplicazione: " + primo + " x " + secondo + " = " + result);
+		result = primo / secondo;
+		System.out.println("Divisione: " + primo + " : " + secondo + " = " + result);
+		result = primo - secondo;
+		System.out.println("Sottrazione: " + primo + " - " + secondo + " = " + result);
+		
+		//assegnazione valore char
+		char a1 = 'a';
+		char a2 = 'b';
+		char a3 = 'c';
+		//Stampo i char affiancati
+		System.out.println(a1 + "" + a2 + "" + a3);
+		
+		char aMaiuscola = 65;
+		System.out.println("Valore ASCII 65: "+ aMaiuscola);
+		aMaiuscola++;
+	}
+	
+	public static void printMessage() 
+	{
+		System.out.println("Hello There!");
+	}
+	
+	public void printMessage2() 
+	{
+		System.out.println("How's going?");
+	}
+}

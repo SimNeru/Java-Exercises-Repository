@@ -1,0 +1,34 @@
+package stringDates;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+
+public class StringDates {
+
+	public static void main(String[] args) {
+		
+		//data di oggi
+		Date today = new Date();
+		System.out.println(today);
+		
+		//data in formato americano
+		LocalDate date = LocalDate.now();
+		System.out.println(date);
+		
+		//ora con millisecondi
+		LocalTime localTime = LocalTime.now();
+		System.out.println(localTime);
+		
+		//data e ora locale
+		LocalDateTime localDateTime = LocalDateTime.now();
+		System.out.println(localDateTime);
+		
+		DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		//alla data senza ora applico il formato creato con dateTimeFormat
+		System.out.println(date.format(dateTimeFormatter));
+	}
+
+}

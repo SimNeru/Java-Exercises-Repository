@@ -1,0 +1,96 @@
+package inputExercise;
+
+import java.util.Scanner;
+
+public class InputExercise {
+
+	public static void main(String[] args) {
+
+		InputExercise istance = new InputExercise();
+		//istance.firstExercise();
+		//istance.secondExercise();
+		istance.thirdExercise();
+
+	}
+
+	private void firstExercise() {
+		boolean condition = true;
+
+		do {
+			Scanner input = new Scanner(System.in);
+
+			System.out.println("Digit first number:");
+			int firstNumber = input.nextInt();
+
+			System.out.println("Digit second number:");
+			int secondNumber = input.nextInt();
+			input.nextLine();
+
+			int sumResult = firstNumber + secondNumber;
+			int multiplicationResult = firstNumber * secondNumber;
+
+			System.out.println("Sum result is: " + sumResult);
+			System.out.println("Multiplication result is: " + multiplicationResult);
+
+			System.out.println("Would you like to do another operation? Type Y or N");
+			String request = input.nextLine().toLowerCase();
+
+			if (request.equals("n")) {
+				condition = false;
+			}
+			
+		} while (condition);
+	}
+
+	private void secondExercise() {
+		boolean condition = true;
+
+		do {
+			Scanner input = new Scanner(System.in);
+			int tot = 0;
+
+			System.out.println("Digit first number:");
+			tot = input.nextInt();
+
+			System.out.println("Digit second number:");
+			tot += input.nextInt();
+
+			System.out.println("Digit third number:");
+			tot += input.nextInt();
+
+			System.out.println("Digit fourth number:");
+			tot += input.nextInt();
+			input.nextLine();
+
+			System.out.println("Total is: " + tot);
+
+			System.out.println("Would you like to do another operation? Type Y or N");
+			String request = input.nextLine().toLowerCase();
+
+			if (request.equals("n")) {
+				condition = false;
+			}
+			
+		} while (condition);
+	}
+
+	private void thirdExercise() {
+		boolean condition = true;
+
+		do {
+			Scanner input = new Scanner(System.in);
+			System.out.println("Welcome to the Centigrades to Kelvin converter: \nPlease digit the centigrade's temperature to convert:");
+			double centigradesToKelvin = input.nextDouble();
+			centigradesToKelvin += 273.15;
+			System.out.println(centigradesToKelvin + " Kelvin");
+
+			System.out.println("Would you like to do another operation? Type Y or N");
+			String request = input.nextLine().toLowerCase();
+
+			if (request.equals("n")) {
+				condition = false;
+			}
+			
+		} while (condition);
+	}
+}

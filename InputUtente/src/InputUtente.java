@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class InputUtente {
+
+	public static void main(String[] args) {
+		
+		//Serve per prendere input dell'utente
+		//tutte le variabili di classe si dichiarano con il new
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Come ti chiami?");
+		String nome = input.nextLine();
+		
+		System.out.println("Il tuo nome è: " + nome);
+		
+		System.out.println("Quanti anni hai?");
+		int età = input.nextInt();
+		
+		System.out.println("La tua età è: " + età);
+		input.nextLine();
+
+		System.out.println("Colore preferito?");
+		String colore = input.nextLine();
+		
+		System.out.println("Il tuo colore preferito è: " + colore);
+		
+		System.out.println("Ciao " + nome + " so che hai " + età + " e che il tuo colore preferito è il " + colore);
+
+	}
+
+}

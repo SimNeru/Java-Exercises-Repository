@@ -1,0 +1,14 @@
+package forme;
+
+public class AreaCerchio {
+
+	public static void main(String[] args) {
+		
+		final double pi = 3.1415;
+		double ray = 12;
+		double area = pi * ray * ray;
+		String stringValues = "::::CIRCLE::::/nRay: " + ray +"/nPi: " + pi + "/nArea: " + area;
+		
+		System.out.println(stringValues);
+	}
+}

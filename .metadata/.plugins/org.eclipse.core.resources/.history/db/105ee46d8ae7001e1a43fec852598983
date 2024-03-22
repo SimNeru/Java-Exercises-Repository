@@ -1,0 +1,31 @@
+package inputExercise;
+
+import java.util.Scanner;
+
+public class InputExercise {
+
+	public static void main(String[] args) {
+		
+		//programma chiede 2 numeri interi e poi ne calcola la somma ed il prodotto
+		//stampando entrambi alla fine
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Digit first number:");
+		int firstNumber = input.nextInt();
+		input.nextLine();
+		
+		System.out.println("Digit second number:");
+		int secondNumber = input.nextInt();
+		input.nextLine();
+		
+		int sumResult = firstNumber + secondNumber;
+		int multiplicationResult = firstNumber * secondNumber;
+		
+		System.out.println("Sum result is: " + sumResult);
+		System.out.println("Multiplication result is: " + multiplicationResult);
+		
+		System.out.println();
+	}
+
+}

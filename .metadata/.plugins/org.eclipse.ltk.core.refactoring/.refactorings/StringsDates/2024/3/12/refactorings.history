@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;dateTimeFormatter&apos; in &apos;stringDates.StringDates.main(...)&apos; to &apos;formatterDateTime&apos;&#x0D;&#x0A;- Original project: &apos;StringsDates&apos;&#x0D;&#x0A;- Original element: &apos;stringDates.StringDates.main(String[]).dateTimeFormatter&apos;&#x0D;&#x0A;- Renamed element: &apos;dateTimeFormatter&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;dateTimeFormatter&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;stringDates{StringDates.java[StringDates~main~\[QString;@dateTimeFormatter!760!848!778!794!QDateTimeFormatter;!0!false" name="formatterDateTime" references="true" stamp="1711040108805" version="1.0"/>
+</session>
