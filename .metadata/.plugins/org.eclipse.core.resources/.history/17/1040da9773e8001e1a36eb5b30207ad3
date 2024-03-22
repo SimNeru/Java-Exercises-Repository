@@ -7,7 +7,6 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.TextStyle;
 import java.util.Date;
 import java.util.Locale;
-import java.util.Random;
 
 public class StringDates {
 
@@ -113,24 +112,5 @@ public class StringDates {
 		
 		String fifthWord = fourthWord.substring(0,4);
 		System.out.println(fifthWord);
-		
-		/////////////////////////////////////////////////////////////////////////////
-
-		//per generare numeri casuali
-		Random r = new Random();
-		int casual = r.nextInt(); //un numero casuale da -2^31 fino 2^31
-		System.out.println(casual);
-		
-		//estremi superiori non vengono considerati
-		int casualWithExtremes = r.nextInt(0,6);
-		System.out.println(casualWithExtremes);
-		
-		int casualExtreme = r.nextInt(Integer.MAX_VALUE);
-		System.out.println(casualExtreme);
-		
-		double casualDouble = r.nextDouble(11);
-		System.out.println(casualDouble);
-		
-		System.out.println(r.nextBoolean());
 	}
 }
