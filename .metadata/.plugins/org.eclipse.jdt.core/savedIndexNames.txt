@@ -1,12 +1,2 @@
 INDEX VERSION 1.134+C:\Users\B22-126-2024\Desktop\Nerucci-Simone\Java-Programming\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index
 2291355165.index
-829926741.index
-1455284727.index
-3979499774.index
-2045990783.index
-472987298.index
-96864854.index
-246254251.index
-1414354590.index
-1150319911.index
