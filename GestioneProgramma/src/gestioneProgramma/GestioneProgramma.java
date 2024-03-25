@@ -9,7 +9,7 @@ public class GestioneProgramma {
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
-		/*System.out.println("Insert your age: ");
+		System.out.println("Insert your age: ");
 		
 		int age = Integer.parseInt(scanner.nextLine());
 		
@@ -72,24 +72,6 @@ public class GestioneProgramma {
 
 	    System.out.println(greetings);
 	    
-	    *System.out.println("//////////////////////////////////////////////////////////");*/
-	    
-	    Random random = new Random();
-	    int diceOne = random.nextInt(1,7);
-	    int diceTwo = random.nextInt(1,7);
-	    
-	    int result = diceOne + diceTwo;
-	    String verdict;
-	    
-	    if (result >= 10) 
-	    {
-	    	verdict = " You have WON! :D";
-	    } 
-	    else 
-	    {
-	    	verdict = " You have LOST! :(";
-	    }
-	    
-	    System.out.println(diceOne + " + " + diceTwo + " = "  + result + verdict);
+	    System.out.println("//////////////////////////////////////////////////////////");
 	}
 }
