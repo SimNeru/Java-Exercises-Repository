@@ -12,7 +12,7 @@ public class RockPaperScissor {
 		Random random = new Random();
 		
 		while(true) {
-		System.out.println("MAKE YOUR CHOICE\n1. ROCK\n2. PAPER\n3. SCISSOR");
+		System.out.println(" \nMAKE YOUR CHOICE\n1. ROCK\n2. PAPER\n3. SCISSOR");
 		
 		int playerChoice = input.nextInt();
 		int virtualChoice = random.nextInt(1,4);
@@ -49,6 +49,7 @@ public class RockPaperScissor {
 			return;
 		}
 		
+		System.out.println("");
 		System.out.println("YOU: " + playerString + " | VS | " + virtualString + " :CPU");
 		
 		boolean playerLoss = (playerChoice == 1 && virtualChoice == 2) || (playerChoice == 2 && virtualChoice == 3) || (playerChoice == 3 && virtualChoice == 1) ? true : false;
@@ -56,13 +57,13 @@ public class RockPaperScissor {
 		
 		if (playerChoice == virtualChoice) 
 		{
-			output = "it's a Draw!";
+			output = "it's a Draw!\n ";
 		} else if (playerLoss)
 		{
-			output = "What a pity, you lost!";
+			output = "What a pity, you lost!\n ";
 		} else 
 		{
-			output = "Congratulations, you won!";
+			output = "Congratulations, you won!\n ";
 		}
 		
 		input.nextLine();
