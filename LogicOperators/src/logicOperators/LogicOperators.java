@@ -210,7 +210,7 @@ public class LogicOperators {
 		System.out.println(messaggio);
 		
 		////////////////////////////////////////////////////////////////////////////////////////*/
-		
+		/*
 		int randomMonth = random.nextInt(1,13);
 		int randomYear = random.nextInt(1,2025);
 		Calendar c = Calendar.getInstance();
@@ -220,15 +220,15 @@ public class LogicOperators {
 		case 2 -> date.getMonth() + " ha 28 giorni" ;
 		default -> date.getMonth() + " ha 31 giorni";
 		};
-		System.out.println(messaggio);
+		System.out.println(messaggio);*/
 	
-		/*System.out.println("Inserisci mese: ");
+		System.out.println("Inserisci mese: ");
 		String mese = input.nextLine().toLowerCase();
 		messaggio = switch(mese) {case "novembre", "aprile", "giugno", "settembre" -> mese + " ha 30 giorni";
 		case "febbraio" -> mese + " ha 28 giorni";
 		default -> mese + " ha 31 giorni";
 		};
-		System.out.println(messaggio);*/
+		System.out.println(messaggio);
 		
 	}
 }
