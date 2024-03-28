@@ -34,7 +34,6 @@ public class LogicOperatorsExercises {
 		String max30days =  " può avere massimo 30 giorni.";
 		String max31days =  " può avere massimo 31 giorni.";
 		String monthName;
-		String result;
 		
 		// Assegna il nome del mese sottoforma di stringa
 		switch (monthArg) 
@@ -89,11 +88,11 @@ public class LogicOperatorsExercises {
 		case 2 :
 			if (yearLeapCheck(yearArg)) 
 			{ 
-				return yearArg + " è un ANNO BISESTILE e " + monthName + " può avere un massimo di 29 giorni";
+				return yearArg + " è un ANNO BISESTILE, " + monthName + " può avere un massimo di 29 giorni";
 			} 
 			else 
 			{
-				return yearArg + " è un ANNO NON BISESTILE e " + monthName + " può avere un massimo di 28 giorni";
+				return yearArg + " è un ANNO NON BISESTILE, " + monthName + " può avere un massimo di 28 giorni";
 			}
 			
 		case 1, 3, 5, 7, 8, 10, 12 :

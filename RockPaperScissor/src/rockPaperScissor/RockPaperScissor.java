@@ -7,9 +7,10 @@ import java.util.Timer;
 public class RockPaperScissor {
 
 	public static void main(String[] args) {
-		System.out.println(":::WELCOME TO THE CHINESE MORRA:::");
+		System.out.println(":::WELCOME TO THE CHINESE'S MORRA:::");
 		Scanner input = new Scanner(System.in);
 		Random random = new Random();
+		int totalWin = 0;
 		
 		while(true) {
 		System.out.println(" \nMAKE YOUR CHOICE\n1. ROCK\n2. PAPER\n3. SCISSOR");
@@ -61,9 +62,23 @@ public class RockPaperScissor {
 		} else if (playerLoss)
 		{
 			output = "What a pity, you lost!\n ";
+			totalWin--;
 		} else 
 		{
 			output = "Congratulations, you won!\n ";
+			totalWin++;
+		}
+		
+		if(totalWin == 2) 
+		{
+			System.out.println("*Player is the WINNER!*");
+			return;
+		}
+		
+		if (totalWin == -2)
+		{
+			System.out.println("*COMPUTER is the WINNER!*");
+			return;
 		}
 		
 		input.nextLine();
