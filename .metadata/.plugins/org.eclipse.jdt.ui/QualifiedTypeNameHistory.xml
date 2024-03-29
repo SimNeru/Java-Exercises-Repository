@@ -12,4 +12,10 @@
     <fullyQualifiedTypeName name="java.text.DateFormatSymbols"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="exercisesLibrary.GuessTheZero"/>
+    <fullyQualifiedTypeName name="exercisesLibrary.WriteWriteWrite"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
+    <fullyQualifiedTypeName name="exercisesLibrary.Counter"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="exercisesLibrary.Asterisks"/>
 </qualifiedTypeNameHistroy>
