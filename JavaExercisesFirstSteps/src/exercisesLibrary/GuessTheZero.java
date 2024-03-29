@@ -10,7 +10,7 @@ public class GuessTheZero {
 		Scanner input = new Scanner(System.in);
 		while (true) {
 		argNumber = input.nextInt();
-		if (argNumber == 0) {return;}
+		if (argNumber == 0) { System.out.println("Terminating.."); return;}
 		else {continue;}
 		}
 	}

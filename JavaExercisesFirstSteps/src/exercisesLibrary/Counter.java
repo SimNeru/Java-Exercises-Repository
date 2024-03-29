@@ -18,9 +18,9 @@ public class Counter {
 		
 		do 
 		{
-			System.out.print(" "+ counterVar); 
+			System.out.print(counterVar + " "); 
 			counterVar++;
-		} while (counterVar <= limit);
+		} while (counterVar < limit);
 		
 	}
 

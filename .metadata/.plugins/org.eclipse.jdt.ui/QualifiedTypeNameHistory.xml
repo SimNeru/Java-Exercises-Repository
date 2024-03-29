@@ -16,6 +16,12 @@
     <fullyQualifiedTypeName name="exercisesLibrary.WriteWriteWrite"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
     <fullyQualifiedTypeName name="exercisesLibrary.Counter"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="exercisesLibrary.Asterisks"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="exercisesLibrary.EvenAndOddCounter"/>
+    <fullyQualifiedTypeName name="exercisesLibrary.SumAllNumbers"/>
+    <fullyQualifiedTypeName name="exercisesLibrary.SumAndFactorial"/>
+    <fullyQualifiedTypeName name="exercisesLibrary.ExitWhenSeven"/>
+    <fullyQualifiedTypeName name="exercisesLibrary.WholeUpToTen"/>
+    <fullyQualifiedTypeName name="exercisesLibrary.CheckTheWord"/>
 </qualifiedTypeNameHistroy>
