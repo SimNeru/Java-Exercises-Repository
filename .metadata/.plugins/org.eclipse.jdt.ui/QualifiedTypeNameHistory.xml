@@ -17,11 +17,15 @@
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
     <fullyQualifiedTypeName name="exercisesLibrary.Counter"/>
     <fullyQualifiedTypeName name="exercisesLibrary.Asterisks"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="exercisesLibrary.EvenAndOddCounter"/>
     <fullyQualifiedTypeName name="exercisesLibrary.SumAllNumbers"/>
     <fullyQualifiedTypeName name="exercisesLibrary.SumAndFactorial"/>
     <fullyQualifiedTypeName name="exercisesLibrary.ExitWhenSeven"/>
     <fullyQualifiedTypeName name="exercisesLibrary.WholeUpToTen"/>
     <fullyQualifiedTypeName name="exercisesLibrary.CheckTheWord"/>
+    <fullyQualifiedTypeName name="javax.print.attribute.standard.JobOriginatingUserName"/>
+    <fullyQualifiedTypeName name="exercisesLibrary.WordSplitter"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="exercisesLibrary.GuessTheNumber"/>
+    <fullyQualifiedTypeName name="exercisesLibrary.FibonacciSequence"/>
 </qualifiedTypeNameHistroy>
