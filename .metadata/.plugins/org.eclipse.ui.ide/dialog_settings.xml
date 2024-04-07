@@ -30,14 +30,17 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Crazy\Documents\Programmazione\Java-Exercises-Repository\LezioneArrays"/>
+			<item value="C:\Users\Crazy\Documents\Programmazione\Java-Exercises-Repository\ArraysLesson"/>
+			<item value="C:\Users\Crazy\Documents\Programmazione\Java-Exercises-Repository\ArraysExercises"/>
 			<item value="C:\Users\Crazy\Documents\Programmazione\Java-Exercises-Repository"/>
 			<item value="C:\Users\B22-126-2024\Desktop\Nerucci-Simone\Java-Programming"/>
 		</list>
 		<section name="SmartImportWizard.dialogBounds">
-			<item key="DIALOG_X_ORIGIN" value="0"/>
-			<item key="DIALOG_Y_ORIGIN" value="0"/>
-			<item key="DIALOG_WIDTH" value="1936"/>
-			<item key="DIALOG_HEIGHT" value="1096"/>
+			<item key="DIALOG_X_ORIGIN" value="8"/>
+			<item key="DIALOG_Y_ORIGIN" value="8"/>
+			<item key="DIALOG_WIDTH" value="1920"/>
+			<item key="DIALOG_HEIGHT" value="1080"/>
 			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 		</section>
 	</section>

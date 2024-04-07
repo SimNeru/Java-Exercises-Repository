@@ -1,4 +1,4 @@
-package arraysExercises;
+package exercisesPackage;
 
 public class StringsMethodsTest {
 	

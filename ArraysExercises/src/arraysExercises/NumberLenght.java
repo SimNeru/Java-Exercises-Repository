@@ -9,11 +9,6 @@ public class NumberLenght {
 
 	public static void numberLenght() 
 	{
-		/*Scanner input = new Scanner(System.in);
-		System.out.println("Please input a number");
-		String value = input.nextLine();
-		System.out.println(value + " is long " + value.length() + " digits");*/
-		
 		Scanner input = new Scanner(System.in); 
 		System.out.println("Please input a number..");
 		int value = input.nextInt();

@@ -1,5 +1,7 @@
 package arraysLesson;
 
+import java.util.Arrays;
+
 public class ArraysLesson {
 
 	public static void main(String[] args) {
@@ -77,7 +79,12 @@ public class ArraysLesson {
 		// ordinare un array
 		String[] words = {"Ciao", "come", "stai", "tutto", "bene", "grazie"};
 		
-		Arrays.class.
+		Arrays.sort(words);
+		
+		for(int i=0; i<words.length;i++) 
+		{
+			System.out.println(words[i]);
+		}
 	}
 
 }

@@ -2,6 +2,8 @@ package exercisesPackage;
 
 import java.util.Scanner;
 
+import arraysExercises.NumberLenght;
+
 public class ExerciseOne {
 	/*
 	 	ES.1
@@ -14,64 +16,73 @@ public class ExerciseOne {
 
 	public static void printMyName() 
 	{
-		String[][] name = new String[3][8]; //Simone
-		
-		name[0][0] = "+"; // [riga][colonna]
-		name[0][7] = "+";
-		name[2][0] = "+";
-		name[2][7] = "+";
-		
-		name[1][0] = "|";
-	    name[1][7] = "|";
-	    
-	    name[0][1]= "-";
-	    name[0][2]= "-";
-	    name[0][3]= "-";
-	    name[0][4]= "-";
-	    name[0][5]= "-";
-	    name[0][6]= "-";
-	    
-	    name[1][1]= "S";
-	    name[1][2]= "I";
-	    name[1][3]= "M";
-	    name[1][4]= "O";
-	    name[1][5]= "N";
-	    name[1][6]= "E";
-	    
-	    name[2][1]= "-";
-	    name[2][2]= "-";
-	    name[2][3]= "-";
-	    name[2][4]= "-";
-	    name[2][5]= "-";
-	    name[2][6]= "-";
-
-	    
-	    for(int i=0;i<name.length;i++) 
-	    {
-	    	for(int j=0;j<name[i].length;j++) 
-	    	{
-	    		System.out.print(name[i][j]);
-	    	}
-	    	System.out.println("");
-	    }
-	    
+		// definisco le variabili per conservare la stringa e la misura della sua lunghezza 
+		// aggiustata per gli apici che serviranno nell'array
 	    Scanner input = new Scanner(System.in);
 	    String nameVar = input.nextLine();
 	    int lengthArrayColumns = nameVar.length()+2;
+	    
+	    // condizione che termina il programma se il nome eccede il massimo per un array
+	    if(lengthArrayColumns>12) 
+	    {
+	    	System.out.println("Sorry your name too long can't print it :(");
+	    	return;
+	    }
+	    
+	    // creo l'array con una lunghezza righe default e lunghezza colonne variabili
+	    char[][] arrayName = new char[3][lengthArrayColumns];
+	    // casto la stringa del nome ad un array di char
 	    char[] orginalCharArray = nameVar.toCharArray();
-	    int position = 0;
+
+	    // assegno i valori di default nell'array
+	    arrayName[0][0] = '+'; // [riga][colonna]
+	    arrayName[0][lengthArrayColumns-1] = '+';
+	    arrayName[2][0] = '+';
+	    arrayName[2][lengthArrayColumns-1] = '+';
 	    
-	    String[][] nameArray = new String[3][lengthArrayColumns];
+	    arrayName[1][0] = '|';
+	    arrayName[1][lengthArrayColumns-1] = '|';
 	    
-	    name[0][0] = "+"; // [riga][colonna]
-		name[0][lengthArrayColumns] = "+";
-		name[2][0] = "+";
-		name[2][lengthArrayColumns] = "+";
-		
-		/*for(int i=1; i<lengthArrayColumns-1;i++) 
+	    // assegno i valori di default nell'array che si alternano 
+	    // in base alla positività o negatività dell'indice
+	    for(int i=1; i<lengthArrayColumns-1;i++) 
+	    {
+	    	if(i%2==0) 
+	    	{
+	    		arrayName[0][i] = '-';
+	    	}
+	    	else
+	    	{
+	    		arrayName[0][i] = ' ';
+	    	}
+	    	
+	    	if(i%2==0) 
+	    	{
+	    		arrayName[2][i] = '-';
+	    	}
+	    	else
+	    	{
+	    		arrayName[2][i] = ' ';
+	    	}
+	    }
+	    
+	    // inizio ad assegnare i valori char del nome sulla stessa riga e su colonna variabile
+		int position = 0;
+		for(int i=1; i<lengthArrayColumns-1;i++) 
 		{
-			name[1][i] = orginalCharArray[position];
-		}*/
+			arrayName[1][i] = orginalCharArray[position];
+			position++;
+		}
 	    
+		// eseguo un ciclo nestato per stampare tutti i valori presenti nell'array 
+		// a seconda della posizione delle righe e delle colonne con l'aiuto degli indici
+		for(int i=0;i<arrayName.length;i++) 
+	    {
+	    	for(int j=0;j<arrayName[i].length;j++) 
+	    	{
+	    		System.out.print(arrayName[i][j]);
+	    	}
+	    	System.out.println("");
+	    }
 	}
 }
