@@ -2,8 +2,6 @@ package exercisesPackage;
 
 import java.util.Scanner;
 
-import arraysExercises.NumberLenght;
-
 public class ExerciseOne {
 	/*
 	 	ES.1
