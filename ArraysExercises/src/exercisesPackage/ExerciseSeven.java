@@ -14,6 +14,7 @@ public class ExerciseSeven {
 
 		private int dayNumber;
 
+		//definisco il costruttore
 		private DaysOfTheWeek(int varDayNumber) {
 			this.dayNumber = varDayNumber;
 		}

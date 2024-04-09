@@ -23,8 +23,17 @@ public class ExerciseOne {
 	    // condizione che termina il programma se il nome eccede il massimo per un array
 	    if(lengthArrayColumns>12) 
 	    {
-	    	System.out.println("Sorry your name too long can't print it :(");
-	    	return;
+	    	System.out.println("Sorry your name too long can't print it..");
+	    	nameVar = "`(*> - <*)′";
+	    	lengthArrayColumns = nameVar.length()+2;
+	    }
+	    
+	    // condizione verifica che sia stato premuto solo invio
+	    if (nameVar.equals("")) 
+	    {
+	    	System.out.println("Namevar was empty");
+	    	nameVar = "(*> 3 >)";
+	    	lengthArrayColumns = nameVar.length()+2;
 	    }
 	    
 	    // creo l'array con una lunghezza righe default e lunghezza colonne variabili
@@ -48,18 +57,11 @@ public class ExerciseOne {
 	    	if(i%2==0) 
 	    	{
 	    		arrayName[0][i] = '-';
-	    	}
-	    	else
-	    	{
-	    		arrayName[0][i] = ' ';
-	    	}
-	    	
-	    	if(i%2==0) 
-	    	{
 	    		arrayName[2][i] = '-';
 	    	}
 	    	else
 	    	{
+	    		arrayName[0][i] = ' ';
 	    		arrayName[2][i] = ' ';
 	    	}
 	    }

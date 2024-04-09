@@ -13,12 +13,13 @@ public class ExerciseFour {
 
 		Scanner input = new Scanner(System.in);
 		System.out.println("Please digit a number");
-
+		
+		// definisco le variabili
 		int inputValue = input.nextInt();
-
 		int max = inputValue;
 		int min = inputValue;
 
+		// 
 		while (true) {
 			if (inputValue == 0) // no
 			{
@@ -26,12 +27,11 @@ public class ExerciseFour {
 				return;
 			}
 
-			if (inputValue < 0 || inputValue > Integer.MAX_VALUE || inputValue < Integer.MIN_VALUE)
+			if (inputValue < 0 || inputValue > Integer.MAX_VALUE)
 			{
 				System.out.println("Please digit a valid number to record. .");
 				max = inputValue;
 				min = inputValue;
-				continue;
 			}
 
 			if (inputValue > max)

@@ -23,46 +23,46 @@ public class ArraysExercises {
 	public static void main(String[] args) {
 		
 		// Esercizio uno
-		ExerciseOne.printMyName();
+		// ExerciseOne.printMyName();
 		
 		// Esercizio due
-		StringsMethodsTest.stringMethodsTest();
+		// StringsMethodsTest.stringMethodsTest();
 		
 		// Esercizio tre
-		NumberLenght.numberLenght();
+		// NumberLenght.numberLenght();
 		
 		// Esercizio quattro
-		ExerciseThree.exerciseThree();
-		ExerciseFour.exerciseFour();
+		// ExerciseThree.exerciseThree();
+		// ExerciseFour.exerciseFour();
 		
 		// Esercizio cinque
-		ExerciseFive.exerciseFive();
+		// ExerciseFive.exerciseFive();
 		
 		// Esercizio sei
-		ExerciseSix.exerciseSix();
+		// ExerciseSix.exerciseSix();
 		
 		// Esercizio sette
-		ExerciseSeven.exerciseSeven();
+		// ExerciseSeven.exerciseSeven();
 		
 		// Esercizio otto
-		ExerciseEight.exerciseEight();
+		// ExerciseEight.exerciseEight();
 		
 		// Esercizio nove
-		ExerciseNine.exerciseNine();
+		// ExerciseNine.exerciseNine();
 		
 		// Esercizio dieci
-		ExerciseTen.exerciseTen();
+		// ExerciseTen.exerciseTen();
 		
 		// Esercizio undici
-		ExerciseEleven.exerciseEleven();
+		// ExerciseEleven.exerciseEleven();
 		
 		// Esercizio dodici
-		ExerciseTwelve.exerciseTwelve();
+		// ExerciseTwelve.exerciseTwelve();
 		
 		// Esercizio tredici
-		ExerciseThirteen.exerciseThirteen();
+		// ExerciseThirteen.exerciseThirteen();
 		
 		// Esercizio quattordici
-		ExerciseFourteen.exerciseFourteen();
+		// ExerciseFourteen.exerciseFourteen();
 	}
 }

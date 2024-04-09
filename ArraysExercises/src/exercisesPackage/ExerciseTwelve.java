@@ -11,6 +11,7 @@ public class ExerciseTwelve {
 	 */
 
 	public static void exerciseTwelve() {
+		/*
 		Scanner input = new Scanner(System.in);
 
 		// definisco la lunghezza dell'array che poi verrà creato
@@ -79,6 +80,21 @@ public class ExerciseTwelve {
 			System.out.println("Descending order");
 		} else {
 			System.out.println("No order");
+		}*/
+		
+		Scanner input = new Scanner(System.in);
+		int x = input.nextInt();
+		int y = input.nextInt();
+		int z = input.nextInt();
+		
+		if(x<y&&y<z) 
+		{
+			System.out.println("Ordine crescente");
+		} else if (x>y&&y>z) 
+		{
+			System.out.println("Ordine decrescente");
+		} else {
+			System.out.println("No ordine");
 		}
 	}
 }
