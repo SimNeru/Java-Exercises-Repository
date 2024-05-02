@@ -38,4 +38,9 @@
     <fullyQualifiedTypeName name="controller.PlaylistCtrl"/>
     <fullyQualifiedTypeName name="model.Canzone"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="model.Programmatore"/>
+    <fullyQualifiedTypeName name="model.ERuolo"/>
+    <fullyQualifiedTypeName name="model.Stagista"/>
+    <fullyQualifiedTypeName name="controller.AziendaCtrl"/>
+    <fullyQualifiedTypeName name="model.Dipendente"/>
 </qualifiedTypeNameHistroy>

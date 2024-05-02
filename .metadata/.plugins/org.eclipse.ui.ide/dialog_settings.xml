@@ -30,6 +30,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Crazy\Documents\Programmazione\Java-Exercises-Repository\Prj3GestioneAzienda"/>
 			<item value="C:\Users\Crazy\Documents\Programmazione\Java-Exercises-Repository\DiceTester"/>
 			<item value="C:\Users\Crazy\Documents\Programmazione\Java-Exercises-Repository\Proj2_Spotify"/>
 			<item value="C:\Users\Crazy\Documents\Programmazione\Java-Exercises-Repository\Project1_GeometriaBase"/>
