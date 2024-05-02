@@ -2,6 +2,9 @@ package view;
 
 import controller.AziendaCtrl;
 import model.Dipendente;
+import model.Manager;
+import model.Programmatore;
+import model.Stagista;
 
 public class Main {
 
@@ -19,11 +22,21 @@ public class Main {
 		Dipendente quattro = new Dipendente("Signora", "Quattro");
 		aziendactrl.AddEmployee(quattro);
 		
-		aziendactrl.printList();
+		//aziendactrl.printList();
 		
-		aziendactrl.PromoteOrDemote(1);
+		//aziendactrl.PromoteOrDemote(1);
 		
-		aziendactrl.printList();
+		//aziendactrl.printList();
+		
+		//System.out.println(due.saluto());
+		
+		Manager manager = new Manager("Sandro", "Verdi", "commerciale");
+		Programmatore programmatore = new Programmatore("Mario", "Rossi", "Java");
+		Stagista stagista = new Stagista("Silvia", "Bianchi");
+
+		System.out.println(programmatore.saluto()+"\n");
+		System.out.println(stagista.saluto()+"\n");
+		System.out.println(manager.saluto()+"\n");
 	}
 
 }

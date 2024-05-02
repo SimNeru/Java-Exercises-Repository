@@ -5,7 +5,8 @@ package model;
 public class Dipendente {
 	
 	String nome, cognome;
-	int numMatricola = 0;
+	static int numMatricola = 0;
+	int numStoreMatricola = 0;
 	final double stipendio;
 	//ERuolo ruolo;
 	String ruolo;
@@ -14,14 +15,14 @@ public class Dipendente {
 	{
 		this.nome = nome;
 		this.cognome = cognome;
-		this.numMatricola++;
+		this.numStoreMatricola = ++this.numMatricola;
 		this.ruolo = "dipendente";
 		this.stipendio = 1200;
 	}
 
 	@Override
 	public String toString() {
-		return "Dipendente [nome=" + nome + ", cognome=" + cognome + ", numMatricola=" + numMatricola + ", ruolo=" + ruolo +"]";
+		return "Dipendente [nome=" + nome + ", cognome=" + cognome + ", numMatricola=" + numStoreMatricola + ", ruolo=" + ruolo +"]";
 	}
 	
 	public double calcoloStipendio() 
@@ -31,7 +32,7 @@ public class Dipendente {
 	
 	public String saluto() 
 	{
-		return "Ciao io sono " + nome + " " + cognome + ", il mio numero di matricola è " + numMatricola + " e ricopro il ruolo di " + ruolo + "!\nE guadagno " + calcoloStipendio();
+		return "Ciao io sono " + nome + " " + cognome + ", il mio numero di matricola è " + numStoreMatricola + " e ricopro il ruolo di " + ruolo + "!\nE guadagno " + calcoloStipendio()  + " euro";
 	}
 
 	public String getNome() {
@@ -51,10 +52,10 @@ public class Dipendente {
 	}	
 	
 	public int getNumMatricola() {
-		return numMatricola;
+		return numStoreMatricola;
 	}
 
 	public void setNumMatricola(int numMatricola) {
-		this.numMatricola = numMatricola;
+		this.numStoreMatricola = numMatricola;
 	}
 }
