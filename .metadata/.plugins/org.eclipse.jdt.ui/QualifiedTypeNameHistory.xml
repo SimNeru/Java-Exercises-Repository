@@ -34,5 +34,8 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.concurrent.locks.Condition"/>
     <fullyQualifiedTypeName name="arraysExercises.NumberLenght"/>
+    <fullyQualifiedTypeName name="controller.CanzoniCtrl"/>
+    <fullyQualifiedTypeName name="controller.PlaylistCtrl"/>
+    <fullyQualifiedTypeName name="model.Canzone"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

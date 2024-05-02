@@ -8,7 +8,7 @@ import model.Canzone;
 
 public class CanzoniCtrl {
 
-	public ArrayList<Canzone> dbCanzoni;
+	ArrayList<Canzone> dbCanzoni;
 
 	public CanzoniCtrl() 
 	{
@@ -63,4 +63,10 @@ public class CanzoniCtrl {
 			e.printStackTrace();
 		}
 	}
+	
+	public ArrayList<Canzone> getDBcanzoni() 
+	{
+		return this.dbCanzoni;
+	}
+
 }
