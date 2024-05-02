@@ -20,7 +20,7 @@ public class Manager extends Dipendente {
 	
 	@Override
 	public String toString() {
-		return "Manager [nome=" + nome + ", cognome=" + cognome + ", numMatricola=" + numMatricola + ", ruolo=" + ruolo
+		return "Manager [nome=" + nome + ", cognome=" + cognome + ", numMatricola=" + numStoreMatricola + ", ruolo=" + ruolo
 				+ "]";
 	}
 	
@@ -31,7 +31,7 @@ public class Manager extends Dipendente {
 	
 	public String saluto() 
 	{
-		return "Ciao io sono " + nome + " " + cognome + ", il mio numero di matricola è " + numMatricola + " e ricopro il ruolo di " + ruolo + " e dirigo il reparto" + reparto + "!\nE guadagno " + this.calcoloStipendio();
+		return "Ciao io sono " + nome + " " + cognome + ", il mio numero di matricola è " + numStoreMatricola + " e ricopro il ruolo di " + ruolo + " e dirigo il reparto " + reparto + "!\nE guadagno " + this.calcoloStipendio() + " euro";
 	}
 
 	public String getReparto() {
@@ -43,3 +43,4 @@ public class Manager extends Dipendente {
 	}
 	
 }
+

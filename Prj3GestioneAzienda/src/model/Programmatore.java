@@ -14,13 +14,12 @@ public class Programmatore extends Dipendente {
 		else 
 		{
 			this.linguaggio = linguaggio;
-
 		}
 	}
 
 	@Override
 	public String toString() {
-		return "Programmatore [nome=" + nome + ", cognome=" + cognome + ", numMatricola=" + numMatricola + ", ruolo="
+		return "Programmatore [nome=" + nome + ", cognome=" + cognome + ", numMatricola=" + numStoreMatricola + ", ruolo="
 				+ ruolo + "]";
 	}
 	
@@ -31,7 +30,7 @@ public class Programmatore extends Dipendente {
 	
 	public String saluto() 
 	{
-		return "Ciao io sono " + nome + " " + cognome + ", il mio numero di matricola è " + numMatricola + " e ricopro il ruolo di " + ruolo + " e programmo in lingua " + linguaggio + "!\nE guadagno " + this.calcoloStipendio();
+		return "Ciao io sono " + nome + " " + cognome + ", il mio numero di matricola è " + numStoreMatricola + " e ricopro il ruolo di " + ruolo + " e programmo in lingua " + linguaggio + "!\nE guadagno " + this.calcoloStipendio() + " euro";
 	}
 
 	public String getLinguaggio() {

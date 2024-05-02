@@ -9,7 +9,7 @@ public class Stagista extends Dipendente{
 
 	@Override
 	public String toString() {
-		return "Stagista [nome=" + nome + ", cognome=" + cognome + ", numMatricola=" + numMatricola + ", ruolo=" + ruolo
+		return "Stagista [nome=" + nome + ", cognome=" + cognome + ", numMatricola=" + numStoreMatricola + ", ruolo=" + ruolo
 				+ "]";
 	}
 	
@@ -20,6 +20,6 @@ public class Stagista extends Dipendente{
 
 	public String saluto() 
 	{
-		return "Ciao io sono " + nome + " " + cognome + ", il mio numero di matricola è " + numMatricola + " e ricopro il ruolo di " + ruolo + "!\n E guadagno " + this.calcoloStipendio();
+		return "Ciao io sono " + nome + " " + cognome + ", il mio numero di matricola è " + numStoreMatricola + " e ricopro il ruolo di " + ruolo + "!\n E guadagno " + this.calcoloStipendio() + " euro";
 	}
 }
