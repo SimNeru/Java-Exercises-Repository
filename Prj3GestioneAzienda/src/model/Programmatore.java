@@ -4,10 +4,18 @@ public class Programmatore extends Dipendente {
 	
 	String linguaggio;
 
-	public Programmatore(String nome, String cognome, int numMatricola, RUOLO ruolo) {
-		super(nome, cognome, numMatricola, ruolo);
-		this.ruolo = RUOLO.programmatore;
-		this.linguaggio = "*NON ASSEGNATO*";
+	public Programmatore(String nome, String cognome, String linguaggio) {
+		super(nome, cognome);
+		this.ruolo = "programmatore";
+		if(linguaggio == null)
+		{
+			this.linguaggio = "*NON ASSEGNATO*";
+		} 
+		else 
+		{
+			this.linguaggio = linguaggio;
+
+		}
 	}
 
 	@Override
@@ -25,4 +33,13 @@ public class Programmatore extends Dipendente {
 	{
 		return "Ciao io sono " + nome + " " + cognome + ", il mio numero di matricola è " + numMatricola + " e ricopro il ruolo di " + ruolo + " e programmo in lingua " + linguaggio + "!\nE guadagno " + this.calcoloStipendio();
 	}
+
+	public String getLinguaggio() {
+		return linguaggio;
+	}
+
+	public void setLinguaggio(String linguaggio) {
+		this.linguaggio = linguaggio;
+	}
+	
 }

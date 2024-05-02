@@ -2,9 +2,9 @@ package model;
 
 public class Stagista extends Dipendente{
 
-	public Stagista(String nome, String cognome, int numMatricola, RUOLO ruolo) {
-		super(nome, cognome, numMatricola, ruolo);
-		this.ruolo = RUOLO.stagista;
+	public Stagista(String nome, String cognome) {
+		super(nome, cognome);
+		this.ruolo = "stagista";
 	}
 
 	@Override

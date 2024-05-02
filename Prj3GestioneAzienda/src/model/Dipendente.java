@@ -1,20 +1,21 @@
 package model;
 
-enum RUOLO { dipendente, manager, programmatore, stagista };
+//enum RUOLO { dipendente, manager, programmatore, stagista };
 
 public class Dipendente {
 	
 	String nome, cognome;
-	int numMatricola;
+	int numMatricola = 0;
 	final double stipendio;
-	RUOLO ruolo;
+	//ERuolo ruolo;
+	String ruolo;
 	
-	public Dipendente(String nome, String cognome, int numMatricola, RUOLO ruolo)
+	public Dipendente(String nome, String cognome)
 	{
 		this.nome = nome;
 		this.cognome = cognome;
-		this.numMatricola = numMatricola;
-		this.ruolo = RUOLO.dipendente;
+		this.numMatricola++;
+		this.ruolo = "dipendente";
 		this.stipendio = 1200;
 	}
 
@@ -32,14 +33,28 @@ public class Dipendente {
 	{
 		return "Ciao io sono " + nome + " " + cognome + ", il mio numero di matricola è " + numMatricola + " e ricopro il ruolo di " + ruolo + "!\nE guadagno " + calcoloStipendio();
 	}
-	
-	public RUOLO getRuolo() 
-	{
-		return this.ruolo;
+
+	public String getNome() {
+		return nome;
 	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getCognome() {
+		return cognome;
+	}
+
+	public void setCognome(String cognome) {
+		this.cognome = cognome;
+	}	
 	
-	public void setRuolo(RUOLO ruolo) 
-	{
-		this.ruolo = ruolo;
+	public int getNumMatricola() {
+		return numMatricola;
+	}
+
+	public void setNumMatricola(int numMatricola) {
+		this.numMatricola = numMatricola;
 	}
 }
