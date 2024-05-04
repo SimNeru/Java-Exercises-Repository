@@ -20,6 +20,6 @@ public class Stagista extends Dipendente{
 
 	public String saluto() 
 	{
-		return "Ciao io sono " + nome + " " + cognome + ", il mio numero di matricola è " + numStoreMatricola + " e ricopro il ruolo di " + ruolo + "!\n E guadagno " + this.calcoloStipendio() + " euro";
+		return "Ciao io sono " + super.nome + " " + super.cognome + ", il mio numero di matricola è " + super.numStoreMatricola + " e ricopro il ruolo di " + this.ruolo + "!\nE guadagno " + this.calcoloStipendio() + " euro";
 	}
 }

@@ -28,10 +28,8 @@
     <fullyQualifiedTypeName name="exercisesLibrary.FibonacciSequence"/>
     <fullyQualifiedTypeName name="arraysExercises.ExerciseFour"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="arraysExercises.ExerciseSeven.DAYSOFTHEWEEK"/>
     <fullyQualifiedTypeName name="arraysExercises.ExerciseSeven.DaysOfTheWeek"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.concurrent.locks.Condition"/>
     <fullyQualifiedTypeName name="arraysExercises.NumberLenght"/>
     <fullyQualifiedTypeName name="controller.CanzoniCtrl"/>
@@ -41,6 +39,9 @@
     <fullyQualifiedTypeName name="model.Programmatore"/>
     <fullyQualifiedTypeName name="model.ERuolo"/>
     <fullyQualifiedTypeName name="model.Stagista"/>
+    <fullyQualifiedTypeName name="view.MainMenu"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="controller.AziendaCtrl"/>
     <fullyQualifiedTypeName name="model.Dipendente"/>
 </qualifiedTypeNameHistroy>

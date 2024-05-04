@@ -1,14 +1,11 @@
 package model;
 
-//enum RUOLO { dipendente, manager, programmatore, stagista };
-
 public class Dipendente {
 	
 	String nome, cognome;
 	static int numMatricola = 0;
 	int numStoreMatricola = 0;
 	final double stipendio;
-	//ERuolo ruolo;
 	String ruolo;
 	
 	public Dipendente(String nome, String cognome)
@@ -32,7 +29,7 @@ public class Dipendente {
 	
 	public String saluto() 
 	{
-		return "Ciao io sono " + nome + " " + cognome + ", il mio numero di matricola è " + numStoreMatricola + " e ricopro il ruolo di " + ruolo + "!\nE guadagno " + calcoloStipendio()  + " euro";
+		return "Ciao io sono " + this.nome + " " + this.cognome + ", il mio numero di matricola è " + this.numStoreMatricola + " e ricopro il ruolo di " + this.ruolo + "!\nE guadagno " + calcoloStipendio()  + " euro";
 	}
 
 	public String getNome() {
@@ -54,8 +51,24 @@ public class Dipendente {
 	public int getNumMatricola() {
 		return numStoreMatricola;
 	}
-
+	
 	public void setNumMatricola(int numMatricola) {
+		
 		this.numStoreMatricola = numMatricola;
+	}
+	
+	public String getRuolo() 
+	{
+		return this.ruolo;
+	}
+
+	public int getNumMatricolaStatic() 
+	{
+		return this.numMatricola;
+	}
+
+	public void setNumMatricolaStatic(int numMatricola) {
+		
+		this.numMatricola = numMatricola;
 	}
 }

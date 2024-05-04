@@ -19,25 +19,32 @@ public class AziendaCtrl {
 			for (Object dipendente : listaDipendenti) {
 				System.out.println(dipendente.toString());
 			}
-
+		}
+	}
+	
+	public void resetNumeriMatricola() 
+	{
+		int nuovoNumero = 1;
+		for (Dipendente dipendente : listaDipendenti) {
+			dipendente.setNumMatricola(nuovoNumero++);
+			dipendente.setNumMatricolaStatic(listaDipendenti.lastIndexOf(dipendente)+1);
 		}
 	}
 
-	public void AddEmployee(Dipendente dipendente) {
-		listaDipendenti.add(dipendente);
+	public ArrayList<Dipendente> getListaDipendenti() {
+		return listaDipendenti;
 	}
 
 	public Dipendente getEmployee(int index) {
-			
-			try {
-				for (Dipendente dipendente : listaDipendenti) {
+		try {
+			for (Dipendente dipendente : listaDipendenti) {
 				if (dipendente.getNumMatricola() == index) {
 					return dipendente;
-				} 
+				}
 			}
-			} catch (Exception e) {
-				System.out.println("Numero di matricola non presente!");
-			}
+		} catch (Exception e) {
+			System.out.println("Numero di matricola non presente!");
+		}
 		return null;
 	}
 
@@ -45,13 +52,104 @@ public class AziendaCtrl {
 		listaDipendenti.remove(dipendente);
 	}
 
-	public Object setEmployee(Object employee) {
-		Object nuovoImpiegato = employee;
-		return nuovoImpiegato;
+	public void removeEmployee(int matricola) {
+		listaDipendenti.remove(getEmployee(matricola));
 	}
 
-	public Dipendente removeEmployee(int index) {
-		return listaDipendenti.get(index);
+	// POSSO ACCEDERE DIRETTAMENTE ALLA POSIZIONE DELL'OGGETTO SULL'ARRAY E
+	// SOSTITUIRLO CON UNO PASSATO DA UN METODO SOVRASCRIVENDO INVECE DI ELIMANRLO?
+	public void setEmployeeObject(Dipendente dipendenteDaModificare, Dipendente dipendenteModificato) {
+		for (int i = 0; i < listaDipendenti.size(); i++) {
+			if (dipendenteDaModificare.equals(listaDipendenti.get(i))) {
+				listaDipendenti.add(dipendenteModificato);
+			}
+		}
+	}
+
+	public void editEmployee(int matricola) {
+		try {
+			Scanner input = new Scanner(System.in);
+			Dipendente dipendenteChiamato = getEmployee(matricola);
+
+			if (dipendenteChiamato.getRuolo().equals("dipendente")) {
+				Dipendente dipendenteDaEditare = dipendenteChiamato;
+				System.out.println("Digita il nuovo NOME da assegnare:");
+				String dipendenteNomeModificato = input.nextLine();
+				System.out.println("Digita il nuovo COGNOME da assegnare:");
+				String dipendenteCognomeModificato = input.nextLine();
+				System.out.println("\nMODIFICHE REGISTRATE. .");
+				dipendenteDaEditare.setNome(dipendenteNomeModificato);
+				dipendenteDaEditare.setCognome(dipendenteCognomeModificato);
+				dipendenteDaEditare.setNumMatricola(matricola);
+				System.out.println("\nMODIFICHE EFFETTUATE. .");
+				System.out.println("\n" + dipendenteDaEditare.saluto());
+				listaDipendenti.remove(dipendenteChiamato);
+				listaDipendenti.add(dipendenteDaEditare);
+			} else
+
+			if (dipendenteChiamato.getRuolo().equals("stagista")) {
+				Dipendente dipendenteDaEditare = dipendenteChiamato;
+				System.out.println("Digita il nuovo NOME da assegnare:");
+				String dipendenteNomeModificato = input.nextLine();
+				System.out.println("Digita il nuovo COGNOME da assegnare:");
+				String dipendenteCognomeModificato = input.nextLine();
+				System.out.println("\nMODIFICHE REGISTRATE. .");
+				dipendenteDaEditare.setNome(dipendenteNomeModificato);
+				dipendenteDaEditare.setCognome(dipendenteCognomeModificato);
+				dipendenteDaEditare.setNumMatricola(matricola);
+				System.out.println("\nMODIFICHE EFFETTUATE. .");
+				System.out.println("\n" + dipendenteDaEditare.saluto());
+				listaDipendenti.remove(dipendenteChiamato);
+				listaDipendenti.add(dipendenteDaEditare);
+			} else
+
+			if (dipendenteChiamato.getRuolo().equals("programmatore")) {
+				Dipendente dipendenteDaEditare = dipendenteChiamato;
+				System.out.println("Digita il nuovo NOME da assegnare:");
+				String dipendenteNomeModificato = input.nextLine();
+				System.out.println("Digita il nuovo COGNOME da assegnare:");
+				String dipendenteCognomeModificato = input.nextLine();
+				System.out.println("Digita il nuovo Linguaggio da assegnare:");
+				String linguaggioProgrammazione = input.nextLine();
+				System.out.println("\nMODIFICHE REGISTRATE. .");
+				dipendenteDaEditare.setNome(dipendenteNomeModificato);
+				dipendenteDaEditare.setCognome(dipendenteCognomeModificato);
+				dipendenteDaEditare.setNumMatricola(matricola);
+				Programmatore isAProgrammer = (Programmatore) dipendenteDaEditare;
+				isAProgrammer.setLinguaggio(linguaggioProgrammazione);
+				System.out.println("\nMODIFICHE EFFETTUATE. .");
+				System.out.println("\n" + dipendenteDaEditare.saluto());
+				listaDipendenti.remove(dipendenteChiamato);
+				listaDipendenti.add(dipendenteDaEditare);
+			} else
+
+			if (dipendenteChiamato.getRuolo().equals("manager")) {
+				Dipendente dipendenteDaEditare = dipendenteChiamato;
+				System.out.println("Digita il nuovo NOME da assegnare:");
+				String dipendenteNomeModificato = input.nextLine();
+				System.out.println("Digita il nuovo COGNOME da assegnare:");
+				String dipendenteCognomeModificato = input.nextLine();
+				System.out.println("Digita il nuovo REPARTO da assegnare:");
+				String managerReparto = input.nextLine();
+				System.out.println("\nMODIFICHE REGISTRATE. .");
+				dipendenteDaEditare.setNome(dipendenteNomeModificato);
+				dipendenteDaEditare.setCognome(dipendenteCognomeModificato);
+				dipendenteDaEditare.setNumMatricola(matricola);
+				Manager isAManager = (Manager) dipendenteDaEditare;
+				isAManager.setReparto(managerReparto);
+				System.out.println("\nMODIFICHE EFFETTUATE. .");
+				System.out.println("\n" + dipendenteDaEditare.saluto());
+				listaDipendenti.remove(dipendenteChiamato);
+				listaDipendenti.add(dipendenteDaEditare);
+			} else
+
+			{
+				System.out.println("Something went wrong. .");
+			}
+		} catch (Exception e) {
+			System.out.println("Something went wrong. .");
+		}
+
 	}
 
 	public void PromoteOrDemote(int matricola) {
@@ -70,8 +168,9 @@ public class AziendaCtrl {
 			Dipendente dipendente = new Dipendente(persona.getNome(), persona.getCognome());
 			saveMatricolaNum = persona.getNumMatricola();
 			System.out.println("L'impiegato matricola " + saveMatricolaNum + " è adesso dipendente!");
-			persona = dipendente;
-			persona.setNumMatricola(saveMatricolaNum);
+			dipendente.setNumMatricola(saveMatricolaNum);
+			listaDipendenti.add(dipendente);
+			removeEmployee(persona);
 			break;
 
 		case 2:
@@ -79,7 +178,7 @@ public class AziendaCtrl {
 			saveMatricolaNum = persona.getNumMatricola();
 			System.out.println("L'impiegato matricola " + saveMatricolaNum + " è adesso programmatore!");
 			programmatore.setNumMatricola(saveMatricolaNum);
-			AddEmployee(programmatore);
+			listaDipendenti.add(programmatore);
 			removeEmployee(persona);
 			break;
 
@@ -87,19 +186,22 @@ public class AziendaCtrl {
 			Stagista stagista = new Stagista(persona.getNome(), persona.getCognome());
 			saveMatricolaNum = persona.getNumMatricola();
 			System.out.println("L'impiegato matricola " + saveMatricolaNum + " è adesso stagista!");
-			persona = stagista;
-			persona.setNumMatricola(saveMatricolaNum);
+			stagista.setNumMatricola(saveMatricolaNum);
+			listaDipendenti.add(stagista);
+			removeEmployee(persona);
 			break;
 
 		case 4:
 			Manager manager = new Manager(persona.getNome(), persona.getCognome(), null);
 			saveMatricolaNum = persona.getNumMatricola();
 			System.out.println("L'impiegato matricola " + saveMatricolaNum + " è adesso manager!");
-			persona = manager;
-			persona.setNumMatricola(saveMatricolaNum);
+			manager.setNumMatricola(saveMatricolaNum);
+			listaDipendenti.add(manager);
+			removeEmployee(persona);
 			break;
 
 		default:
+			System.out.println("Invalid digit please try again");
 			break;
 		}
 
